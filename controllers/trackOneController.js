@@ -39,10 +39,10 @@ module.exports.getData = async (req, res) => {
   try {
     // console.log(req.query);
 
-    const { slack_username, track } = req.query;
+    const { slack_name, track } = req.query;
 
     res.status(200).json({
-      slack_name: slack_username,
+      slack_name: slack_name,
       current_day: dayOfWeekName,
       utc_time: isoString,
       track: track,
