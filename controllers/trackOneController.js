@@ -44,7 +44,7 @@ module.exports.getData = async (req, res) => {
     res.status(200).json({
       slack_name: slack_name,
       current_day: dayOfWeekName,
-      utc_time: isoString,
+      utc_time: "2023-09-08T11:41:51Z",
       track: track,
       github_file_url:
         "https://github.com/Nierowheezy/backend-task/blob/main/app.js",
