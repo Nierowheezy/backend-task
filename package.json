@@ -4,7 +4,7 @@
   "description": "backend app to return json object",
   "main": "app.js",
   "engines": {
-    "node": "12.x"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node app.js",
