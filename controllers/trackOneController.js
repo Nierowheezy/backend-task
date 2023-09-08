@@ -29,11 +29,28 @@ const dayOfWeekName = new Date().toLocaleString("default", { weekday: "long" });
 // console.log(dayOfWeekName); // 👉️ Sunday
 
 // utc date
-const now = new Date();
+// const now = new Date();
 
-const isoString = now.toISOString();
+// const isoString = now.toISOString();
 
 // console.log(isoString);
+
+const now = new Date();
+
+const year = now.getUTCFullYear();
+const month = now.getUTCMonth() + 1;
+const day = now.getUTCDate();
+const hours = now.getUTCHours();
+const minutes = now.getUTCMinutes();
+const seconds = now.getUTCSeconds();
+const milliseconds = now.getUTCMilliseconds();
+
+// console.log(`${year}-${month}-${day}
+//             ${hours}:${minutes}:${seconds}:${milliseconds}Z`);
+
+//   "utc_time": "2023-08-21T15:04:05Z",
+
+const utc_time = `${year}-0${month}-0${day}T${hours}:${minutes}:${seconds}Z`;
 
 module.exports.getData = async (req, res) => {
   try {
@@ -44,7 +61,7 @@ module.exports.getData = async (req, res) => {
     res.status(200).json({
       slack_name: slack_name,
       current_day: dayOfWeekName,
-      utc_time: "2023-09-08T11:41:51Z",
+      utc_time: utc_time,
       track: track,
       github_file_url:
         "https://github.com/Nierowheezy/backend-task/blob/main/app.js",
