@@ -2,6 +2,6 @@ const { Router } = require("express");
 const trackOneRouter = require("./trackOneRoutes");
 const router = Router();
 
-router.use("/api/v1/getdata", trackOneRouter);
+router.use("/api", trackOneRouter);
 
 module.exports = router;
