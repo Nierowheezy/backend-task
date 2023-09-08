@@ -35,24 +35,29 @@ const dayOfWeekName = new Date().toLocaleString("default", { weekday: "long" });
 
 // console.log(isoString);
 
-const now = new Date();
+// const now = new Date();
 
-const year = now.getUTCFullYear();
-const month = now.getUTCMonth() + 1;
-const day = now.getUTCDate();
-const hours = now.getUTCHours();
-const minutes = now.getUTCMinutes();
-const seconds = now.getUTCSeconds();
-const milliseconds = now.getUTCMilliseconds();
+// const year = now.getUTCFullYear();
+// const month = now.getUTCMonth() + 1;
+// const day = now.getUTCDate();
+// const hours = now.getUTCHours();
+// const minutes = now.getUTCMinutes();
+// const seconds = now.getUTCSeconds();
+// const milliseconds = now.getUTCMilliseconds();
 
 // console.log(`${year}-${month}-${day}
 //             ${hours}:${minutes}:${seconds}:${milliseconds}Z`);
 
 //   "utc_time": "2023-08-21T15:04:05Z",
 
-const utc_time = `${year}-0${month}-0${day}T${hours}:${minutes}:${seconds}Z`;
+// const utc_time = `${year}-0${month}-0${day}T${hours}:${minutes}:${milliseconds}Z`;
+
+// console.log(utc_time);
 
 module.exports.getData = async (req, res) => {
+  const currentDate = new Date();
+  // const current_day = daysOfWeek[currentDate.getDay()];
+  const utc_time = currentDate.toISOString().replace(/\.\d+Z$/, "Z");
   try {
     // console.log(req.query);
 
