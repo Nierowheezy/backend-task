@@ -1,0 +1,19 @@
+{
+  "name": "taskone",
+  "version": "1.0.0",
+  "description": "backend app to return json object",
+  "main": "app.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olaniyi Olabode",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
