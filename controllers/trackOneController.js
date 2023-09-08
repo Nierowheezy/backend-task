@@ -50,7 +50,7 @@ const milliseconds = now.getUTCMilliseconds();
 
 //   "utc_time": "2023-08-21T15:04:05Z",
 
-const utc_time = `${year}-0${month}-0${day}T${hours}:0${minutes}:${seconds}Z`;
+const utc_time = `${year}-0${month}-0${day}T${hours}:${minutes}:${seconds}Z`;
 
 module.exports.getData = async (req, res) => {
   try {
