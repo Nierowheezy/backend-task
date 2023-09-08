@@ -46,8 +46,9 @@ module.exports.getData = async (req, res) => {
       current_day: dayOfWeekName,
       utc_time: isoString,
       track: track,
-      github_file_url: "https://github.com/Nierowheezy/repo/app.js",
-      github_repo_url: "https://github.com/Nierowheezy/repo",
+      github_file_url:
+        "https://github.com/Nierowheezy/backend-task/blob/main/app.js",
+      github_repo_url: "https://github.com/Nierowheezy/backend-task.git",
       status_code: 200,
     });
   } catch (err) {
