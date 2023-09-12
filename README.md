@@ -20,9 +20,8 @@ UML Diagram: ![](docs/diagram.png)
 
 ## API USAGE
 
-To use crud api an API .
+To use crud api an API See the list of available endpoints.
 
-The api takes an Id for the following end points
 `get a list persons`
 `get a single person`
 `update a person`
