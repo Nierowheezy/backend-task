@@ -37,6 +37,8 @@ UPDATE  https://backend-task-wz1u.onrender.com/api/user_id
 DELETE  https://backend-task-wz1u.onrender.com/api/user_id
 ```
 
+See API Docs on Postman [CRUD](https://documenter.getpostman.com/view/6423394/2s9YC4TXhF#75bce2b0-f221-42ed-95cf-33961c229dca)API
+
 | Verb     | API           |
 | :------- | :------------ |
 | `GET`    | `api`         |
