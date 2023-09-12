@@ -22,15 +22,17 @@ UML Diagram: ![](docs/images/diagram.png)
 
 To use crud api an API See the list of available endpoints.
 
-`get a list persons`
-`get a single person`
+<!-- `get a list persons` -->
+
+`create a single person`
+`read a single person`
 `update a person`
 `delete a person`
 
 see sample below endpoints below.
 
 ```http
-GET     https://backend-task-wz1u.onrender.com/api
+<!-- GET     https://backend-task-wz1u.onrender.com/api -->
 GET     https://backend-task-wz1u.onrender.com/api/user_id
 POST    https://backend-task-wz1u.onrender.com/api
 UPDATE  https://backend-task-wz1u.onrender.com/api/user_id
@@ -39,11 +41,13 @@ DELETE  https://backend-task-wz1u.onrender.com/api/user_id
 
 See API Docs on Postman [CRUD](https://documenter.getpostman.com/view/6423394/2s9YC4TXhF#75bce2b0-f221-42ed-95cf-33961c229dca) API.
 
-![](docs/images/postman.jpg)
+![](docs/images/postman1.jpg)
+![](docs/images/postman2.jpg)
+![](docs/images/postma3.jpg)
 
 | Verb     | API           |
-| :------- | :------------ |
-| `GET`    | `api`         |
+| :------- | :------------ | ----- | --- |
+| <!--     | `GET`         | `api` | --> |
 | `GET`    | `api/user_id` |
 | `POST`   | `string`      |
 | `UPDATE` | `api/user_id` |
@@ -55,7 +59,7 @@ See API Docs on Postman [CRUD](https://documenter.getpostman.com/view/6423394/2s
 
 ## Responses
 
-Sample API respsonse for a successful get request list of persons
+<!-- Sample API respsonse for a successful get request list of persons
 
 ```javascript
 [
@@ -63,8 +67,9 @@ Sample API respsonse for a successful get request list of persons
     _id: 1,
     Name: "Mark Essien",
   },
-];
-```
+]; -->
+
+````
 
 Sample API respsonse for a successful get request single person
 
@@ -73,7 +78,7 @@ Sample API respsonse for a successful get request single person
     _id: 1,
     Name: "Mark Essien",
   },
-```
+````
 
 Sample API respsonse for a successful post request
 
