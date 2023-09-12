@@ -3,7 +3,7 @@
 CRUD operation.
 REST API capable of CRUD operations on a "person" resource, interfacing with any database of your choice.
 
-These docs describe how to use the [CRUD]API. We hope you enjoy these docs.
+These docs describe how to use the [CRUD](https://github.com/Nierowheezy/backend-task.git)API. We hope you enjoy these docs.
 
 # How to run
 
