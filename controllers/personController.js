@@ -17,7 +17,7 @@ module.exports.getPerson = (req, res, next) => {
   personCrud
     .getById(req.params.id)
     .then((data) => {
-      console.log(typeof data);
+      // console.log(typeof data);
       if (data) res.send(data);
       else raiseRecord404Error(req, res);
     })
@@ -27,7 +27,12 @@ module.exports.getPerson = (req, res, next) => {
 module.exports.createPerson = (req, res, next) => {
   personCrud
     .create(req.body)
-    .then((data) => res.status(201).json(data))
+    .then((data) =>
+      res.status(201).json({
+        _id: data._id,
+        Name: data.Name,
+      })
+    )
     .catch((err) => next(err));
 };
 

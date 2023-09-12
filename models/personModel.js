@@ -11,7 +11,10 @@ const personSchema = new mongoose.Schema(
       required: [true, "Please enter your name!"],
       trim: true,
     },
-    __v: { type: Number, select: false },
+    __v: {
+      type: Number,
+      select: false,
+    },
   },
   {
     _id: false,
