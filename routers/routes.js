@@ -13,7 +13,7 @@ const {
 const router = Router();
 
 // router.get("/", getData);
-router.get("/", getPersons);
+// router.get("/", getPersons);
 router.get("/:id", getPerson);
 router.post("/", createPerson);
 router.put("/:id", updatePerson);
