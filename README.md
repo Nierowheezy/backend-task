@@ -16,7 +16,7 @@ you can test the api end points using any testing software of your choices
 ## API USAGE
 
 Database Modelling:
-UML Diagram: ![](docs/diagram.png)
+UML Diagram: ![](./docs/diagram.png)
 
 ## API USAGE
 
