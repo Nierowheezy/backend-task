@@ -1,6 +1,6 @@
 exports.generateCrudMethods = (Model) => {
   return {
-    // getAll: async () => await Model.find(),
+    getAll: async () => await Model.find(),
     getById: async (id) => await Model.findById(id),
     create: async (record) => await Model.create(record),
     update: async (id, record) =>

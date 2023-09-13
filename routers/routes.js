@@ -1,7 +1,7 @@
 const { Router } = require("express");
 // const { getData } = require("../controllers/trackOneController");
 const {
-  // getPersons,
+  getPersons,
   getPerson,
   createPerson,
   updatePerson,
@@ -13,7 +13,7 @@ const {
 const router = Router();
 
 // router.get("/", getData);
-// router.get("/", getPersons);
+router.get("/", getPersons);
 router.get("/:id", getPerson);
 router.post("/", createPerson);
 router.put("/:id", updatePerson);

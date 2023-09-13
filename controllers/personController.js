@@ -5,12 +5,12 @@ const { generateCrudMethods } = require("../services");
 const personCrud = generateCrudMethods(Person);
 const { raiseRecord404Error } = require("../middlewares");
 
-// module.exports.getPersons = async (req, res, next) => {
-//   personCrud
-//     .getAll()
-//     .then((data) => res.send(data))
-//     .catch((err) => next(err));
-// };
+module.exports.getPersons = async (req, res, next) => {
+  personCrud
+    .getAll()
+    .then((data) => res.send(data))
+    .catch((err) => next(err));
+};
 
 module.exports.getPerson = (req, res, next) => {
   // console.log(req.params);
